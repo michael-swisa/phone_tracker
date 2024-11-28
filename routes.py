@@ -31,6 +31,7 @@ def get_bluetooth_connections():
     tracker = PhoneTracker(neo4j_driver)
     bluetooth_connections = tracker.count_bluetooth_connections()
 
+
     return jsonify({'result': bluetooth_connections}), 200
 
 
