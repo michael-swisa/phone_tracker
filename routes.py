@@ -49,6 +49,7 @@ def get_device_connections():
     tracker = PhoneTracker(neo4j_driver)
     device_connections = tracker.count_device_connections(device_id)
 
+
     return jsonify({'result': device_connections}), 200
 
 
