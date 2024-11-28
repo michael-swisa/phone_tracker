@@ -116,6 +116,7 @@ class PhoneTracker:
         with self.driver.session() as session:
             result = session.run(query, {"from_device_id": from_device_id, "to_device_id": to_device_id})
 
+
             return result.single()["is_connection"]
 
     def find_most_recent_interaction(self, device_id):
