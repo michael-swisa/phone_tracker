@@ -62,7 +62,6 @@ def get_direct_connection():
     return jsonify({'result': is_direct_connection}), 200
 
 
-
 @phone_blueprint.route("/api/most_recent_interaction", methods=['GET'])
 def get_most_recent_interaction():
     device_id = request.args.get('device_id')
