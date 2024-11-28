@@ -9,6 +9,7 @@ phone_blueprint = Blueprint('phone_tracker', __name__)
 def get_interaction():
     data = request.get_json()
 
+
     if not data:
         return jsonify({"error": "No data provided"}), 400
 
