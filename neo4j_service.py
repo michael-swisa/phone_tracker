@@ -4,6 +4,7 @@ class PhoneTracker:
 
     def create_phone_tracker(self, data):
         devices = data.get("devices", [])
+
         interaction = data.get("interaction", {})
 
         query_create_device = """
